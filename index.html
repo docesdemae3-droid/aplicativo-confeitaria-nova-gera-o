@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Doces de Mãe • Ficha Técnica Profissional</title>
+<title>Doces de Mãe • App Confeitaria Nova Geração</title>
+<link rel="icon" type="image/png" href="icone-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#542b18">
+<meta name="application-name" content="Doces de Mãe">
+<meta name="apple-mobile-web-app-title" content="Doces de Mãe">
 <style>
 :root{--bg:#fbf7f2;--card:#fffdfa;--ink:#452416;--muted:#806b60;--brand:#542b18;--brand2:#70402a;--soft:#f2e6da;--line:#e5d7c9;--gold:#b28a54;--ok:#356b4b;--danger:#a34848;--shadow:0 8px 28px rgba(72,39,28,.08)}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
@@ -119,7 +125,7 @@ input[type="number"]{
 .home-card button{align-self:flex-start}
 .home-card.planned{background:#fcfaf8;border-style:dashed}
 .home-status{display:inline-block;align-self:flex-start;font-size:10px;font-weight:800;border-radius:99px;padding:5px 8px;background:#f3e6dc;color:#855b43;margin-bottom:10px}
-.home-bottom{display:grid;grid-template-columns:1.2fr 1fr;gap:13px;margin-top:14px}
+.home-bottom{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:13px;margin-top:14px}
 .home-panel{background:#fff;border:1px solid #eaded5;border-radius:16px;padding:17px}
 .home-panel h3{font-size:15px;color:#542b18;margin:0 0 12px}
 .home-panel p,.home-panel li{font-size:12px;color:#806b5f;line-height:1.55}
@@ -201,7 +207,7 @@ input[type="number"]{
   <div class="home-card"><div class="home-icon">📊</div><h3>5. Resultados e relatórios</h3><p>Consulte o resumo do estoque, movimentações e os resultados estimados do planejamento salvo.</p><button class="secondary" onclick="showPlanned('relatorios')">Ver relatórios →</button></div>
   <div class="home-card"><div class="home-icon">💾</div><h3>6. Configurações e backup</h3><p>Exporte seus dados para guardar uma cópia e restaure um backup quando necessário.</p><button class="secondary" onclick="showPlanned('config')">Abrir configurações →</button></div>
  </div>
- <div class="home-bottom"><div class="home-panel"><h3>Como usar o aplicativo</h3><ul><li><b>Primeiro:</b> cadastre todos os insumos, suas embalagens, preços de compra e quantidades atuais no Controle de Estoque.</li><li><b>Depois:</b> monte a ficha técnica selecionando os ingredientes que já foram cadastrados.</li><li>Confira os custos e a precificação da receita.</li><li>Registre movimentações para manter o saldo do estoque atualizado.</li></ul></div><div class="home-panel"><h3>Importante sobre seus dados</h3><p>Os dados são armazenados neste navegador e aparelho. Faça backups regularmente em Configurações e guarde o arquivo em local seguro. Para usar os mesmos dados em outro aparelho, exporte e importe o backup.</p></div></div>
+ <div class="home-bottom"><div class="home-panel"><h3>Como usar o aplicativo</h3><ul><li><b>Primeiro:</b> cadastre todos os insumos, suas embalagens, preços de compra e quantidades atuais no Controle de Estoque.</li><li><b>Depois:</b> monte a ficha técnica selecionando os ingredientes que já foram cadastrados.</li><li>Confira os custos e a precificação da receita.</li><li>Registre movimentações para manter o saldo do estoque atualizado.</li></ul></div><div class="home-panel"><h3>📱 Coloque o app na tela do celular</h3><ul><li><b>Android (Chrome):</b> toque nos 3 pontinhos ⋮ e em “Adicionar à tela inicial”.</li><li><b>iPhone (Safari):</b> toque em Compartilhar (quadrado com seta) e em “Adicionar à Tela de Início”.</li><li>Use sempre o mesmo celular e o mesmo navegador: é lá que seus dados ficam guardados.</li></ul></div><div class="home-panel"><h3>Importante sobre seus dados</h3><p>Os dados são armazenados neste navegador e aparelho. Faça backups regularmente em Configurações e guarde o arquivo em local seguro. Para usar os mesmos dados em outro aparelho, exporte e importe o backup.</p></div></div>
 </section>
 
 <div id="plannedPanel" class="home-dashboard no-print" hidden><div class="home-welcome"><div class="home-eyebrow">GESTÃO DA CONFEITARIA</div><h1 id="plannedTitle">Módulo</h1><p id="plannedDesc"></p><div id="moduleContent"></div><div class="stock-actions"><button class="secondary" onclick="showModule('inicio')">← Voltar à visão geral</button></div></div></div>
